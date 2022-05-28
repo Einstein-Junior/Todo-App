@@ -23,7 +23,7 @@ const Dashboard = () => {
         </div>
       <div className="p-4 flex">
               <div>
-                <small className="text-gray-300  text-md font-semibold">Already Signed up?</small>&nbsp;
+                <small className="text-black text-lg font-semibold">Already Signed up?</small>&nbsp;
                 <button onClick={getStarted}><small className='text-blue-400 hover:cursor-pointer'>Login</small></button>
               </div>
         </div>
@@ -31,4 +31,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default Dashboard;

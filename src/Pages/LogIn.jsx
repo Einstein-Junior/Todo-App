@@ -34,7 +34,7 @@ const LogIn = (email, password) => {
   return (
     <>
       <div className="log-in min-h-screen relative text-gray-900">
-        <div className='px-5 text-xl sm:px-10 py-2 sm:py-6 absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-md' style={{backgroundColor:'#e2e3e4'}}>
+        <div className='px-5 text-xl sm:px-20 py-2 sm:py-8 absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-md' style={{backgroundColor:'#e2e3e4'}}>
 
           <h2 className="text-center pb-6 text-xl font-semibold">Log In</h2>
           {/* {currentUser.email} */}

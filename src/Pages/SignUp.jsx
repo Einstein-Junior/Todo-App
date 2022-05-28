@@ -36,7 +36,7 @@ const SignUp = (email, password) => {
   }
   return (
     <div className="info-card min-h-screen  text-gray-900">
-      <div  className='px-5 py-8 sm:py-2  sm:px-20 absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-md' style={{backgroundColor:'#e2e3e4'}}>
+      <div  className='px-5 py-8 text-xl sm:py-10  sm:px-32 absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-md' style={{backgroundColor:'#e2e3e4'}}>
        <h1 className="text-2xl font-semibold sm:h-80 absolute left-2 sm:left-6 text-slate-400">Welcome, </h1>
         <h1 className="pb-8"></h1>
         <h2 className="text-center text-xl font-semibold">Sign Up</h2>

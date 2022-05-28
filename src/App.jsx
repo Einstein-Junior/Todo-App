@@ -18,7 +18,7 @@ const App = () => {
           <AuthProvider>
             <Routes>
               <Route path='/todo-app' element={<PrivateRoute/>}>
-                <Route exact path='/todo-app' element={<ToDoApp/>} />
+                <Route path='/todo-app' element={<ToDoApp/>} />
               </Route>
               <Route exact path='/' element={<Dashboard/>}/>
               <Route path="/signup" element={<SignUp/>}/>
