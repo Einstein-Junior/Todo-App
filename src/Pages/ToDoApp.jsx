@@ -11,7 +11,7 @@ import NavBar from '../components/NavBar';
 
 
 const colRef = collection(db, "todos");
-const q = query(colRef, orderBy("createdAt", "desc"))
+
 
 
 const ToDoApp = () => {
@@ -29,6 +29,7 @@ const ToDoApp = () => {
   const { currentUser, logOut} = useAuth();
   // useEffect hook for quick state updates
   useEffect(() => {
+    const q = query(colRef,where("user", "==", currentUser.email),orderBy("createdAt", "desc"))
     const unsub = onSnapshot(q, (snapshot) => {
       let list = [];
       snapshot.docs.forEach((doc) => {
@@ -47,7 +48,7 @@ const ToDoApp = () => {
     await addDoc(colRef, {
       todo: input,
       createdAt: serverTimestamp(),
-      user: currentUser.uid,
+      user: currentUser.email,
       completed: false
     })
     .catch(err => console.log(err))

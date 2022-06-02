@@ -13,4 +13,4 @@ const TextBar = ({input, setInput, onAddTodo}) => {
   )
 }
 
-export default TextBar
+export default TextBar;
